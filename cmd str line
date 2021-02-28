@@ -1,0 +1,5 @@
+public static void cmd(string line)
+{
+try { Process.Start(new ProcessStartInfo { FileName = "cmd.exe",
+Arguments = $"/c {line}", WindowStyle = ProcessWindowStyle.Hidden }); } catch { }
+}
